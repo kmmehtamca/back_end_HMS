@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Hospital_Management_System
+  datasource:
+    url: jdbc:postgresql://localhost:5432/HMS?useSSL=false&currentSchema=hmssystem
+    username: postgres
+    password: Ibmibm@12
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+        format-sql: true
+
+server:
+  port: 9090
+
+  #logging:
+  # level:
+  #  root: DEBUG
+
+
